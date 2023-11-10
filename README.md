@@ -1,3 +1,3 @@
 # Ecommerce-Website
 
-This is a online Ecom-website 
+This is an online Ecom-website ,for easy shopping!!
