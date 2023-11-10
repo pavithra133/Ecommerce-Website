@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1><img src="image.png" alt="logo"><B>DAILY FRESH</B> </h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a>
+                  <ul class="submenu">
+                    <li><a href="">WishList</a></li>
+                    <li><a href="Orders.html">Orders</a></li>
+                  </ul>
+                </li>
+                <li><a href="products.html">Products</a>
+                    <ul class="submenu">
+                    <li><a href="product1.html">Fresh Milk</a></li>
+                    <li><a href="product2.html">Curd</a></li>
+                    <li><a href="product3.html">Panner</a> </li>
+                    <li><a href="product4.html">Ghee</a></li>
+                    <li><a href="product5.html">Butter Milk</a></li>
+                    <li><a href="product6.html">Cheese</a></li>
+                    
+                </ul>
+                </li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <br> <br>
+    <center></center>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="searchItems()">Search</button>
+</center>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://img.onmanorama.com/content/dam/mm/en/food/foodie/images/2018/7/11/milk-products.jpg" alt="Image 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://img.freepik.com/free-photo/top-view-variety-tasty-cheese-with-milk_23-2148610555.jpg" alt="Image 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz6css6SF5l3Z9c9xCRvLj0wE1Jl1Dukj-zgIB989jqp7lkybmP0nwpkA_2JaBNWuApwY&usqp=CAU"  alt="Image 3">
+        </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <script src="script.js"></script>
+    <h1>Fresh and Healthy Products</h1>
+
+    <section class="image-grid">
+        <div class="image-container">
+        <a href="product1.html">
+            <img src= "https://media.istockphoto.com/id/535489242/photo/pouring-milk-in-the-glass-on-the-background-of-nature.webp?b=1&s=170667a&w=0&k=20&c=Wlu4vt4RHJTzB0y2lda5JMAPZdTDnWyuQjpTeampITI=" alt="Image 1">
+        </a>
+        <p>Fresh Milk</p>
+        </div>
+        <div class="image-container">
+        <a href="product2.html">
+            <img src="https://www.archanaskitchen.com/images/archanaskitchen/BasicRecipes_HOW_TO/How_To_Make_Fresh_Homemade_Yogurt_Curd_400.jpg" alt="Image 2">
+        </a>
+         <p>Creamy Curd</p>
+        </div>
+        <div class="image-container">
+            <a href="page3.html">
+            <img src="https://t3.ftcdn.net/jpg/04/02/96/08/360_F_402960869_sCxynK1tJGhDMAbRwhzdiwYkOLI5D3qv.jpg" alt="Image 3">
+        </a>
+        <p>Panner</p>
+        </div>
+        <div class="image-container">
+            <a href="page4.html">
+            <img src="https://img.freepik.com/premium-photo/ghee-clarified-butter-close-up-wooden-bowl-silver-spoon-selective-focus_466689-21174.jpg" alt="Image 4">
+        </a>
+        <p>Pure Cow Ghee</p>
+        </div>
+        <div class="image-container">
+            <a href="page5.html">
+            <img src="https://www.awesomecuisine.com/wp-content/uploads/2008/11/masala-buttermilk.jpg" alt="Image 5">
+        </a>
+        <p>Butter Milk</p>
+        </div>
+        <div class="image-container">
+            <a href="page6.html">
+            <img src="https://e334ex4ruv4.exactdn.com/wp-content/uploads/2021/09/Copy-of-Blog-post-images-1.jpg?strip=all&lossy=1&ssl=1" alt="Image 6">
+        </a>
+        <br>
+        <p>Cheesy cheese</p>
+        </div>
+        
+</section> <br>
+
+      <h1>
+       Buy Now
+      </h1>   
+       <div class="product-list">
+        <div class="product">
+            <img src="data:image/jpeg;base64,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" alt="Product 1">
+            <h2>Fresh Milk</h2>
+            <p>Standardized Full Cream Milk</p>
+            <p>Price: $10</p>
+            <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="buynow.html">
+            <img src="https://images.healthshots.com/healthshots/en/uploads/2022/02/17155413/curd.jpg" alt="Product 2"></a>
+            <h2>Curd</h2>
+            <p>Delicious Curd</p>
+            <p>Price: $15</p>
+            <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://images.healthshots.com/healthshots/en/uploads/2021/11/03180439/which-ghee-is-better-1600x900.jpg" alt="Product 3">
+            <h2>Pure Ghee</h2>
+            <p>Aromatic Fresh Ghee</p>
+            <p>Price: $20</p>
+            <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+        </div>
+        <!-- Add more product listings here -->
+    </div>
+    
+
+    <footer class="alternate-footer">
+    <div class="footer-content">
+        <div class="contact-details">
+            <h2>Fresh Dairy</h2>
+            <p><img src="images-nat.jpg" alt="cream">Fresh Cream</p>
+            <p>Special Cream</p>
+            <p>Creamy products</p>
+            <p>Aroma</p>
+
+        </div>
+    <div class="contact-details">
+        <h2>Contact Us</h2>
+        <p>Email: freshdairy@gmail.com</p>
+        <p>Phone: 98979 87575</p>
+        <p>Address: 22,South St</p>
+        <a href="https://www.instagram.com/your_instagram_profile" target="_blank" rel="noopener noreferrer"><img src="instagram.jpg" alt="Instagram">freshdairy_offl</a> <br>
+        <a href="https://www.facebook.com/your_facebook_profile" target="_blank" rel="noopener noreferrer"><img src="facebook.png" alt="Facebook">freshdairy_offl</a>
+    
+    </div>
+    
+    <!-- Google Map -->
+    <div class="map-media">
+        
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.158791112838!2d76.96318737381833!3d11.101540753115266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f7000afa766b%3A0x2b5757b8d520a3af!2sSri%20Ramakrishna%20Engineering%20College!5e0!3m2!1sen!2sin!4v1697297831852!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </div>
+    <!-- Social Media Links -->
+    <div class="social-media">
+        
+    
+    </div>
+</footer>
+
+</body>
+</html>

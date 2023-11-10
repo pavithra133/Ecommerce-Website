@@ -1,0 +1,312 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart {
+    text-align: center;
+    padding: 20px;
+}
+/*LIST*/
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+/* Add more CSS styles as needed */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the navigation menu */
+header {
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color for the menu items */
+}
+
+nav ul {
+    display: flex; /* Display menu items horizontally */
+    justify-content: space-around; /* Distribute items evenly */
+    padding: 10px 0; /* Add padding to the top and bottom of the menu */
+}
+
+nav li {
+    margin: 0 10px; /* Add spacing between menu items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for menu item links */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s; /* Add a smooth color transition effect */
+}
+
+nav a:hover {
+    color: #ff9900; /* Change text color on hover */
+}
+
+
+/*SUB MENUUUU*/
+/* CSS for submenu */
+.submenu-container{
+    position: relative;
+}
+.submenu {
+    display: none; /* Hide the submenu by default */
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.submenu a:hover {
+    background-color:#fffefc;
+}
+.submenu li {
+    background-color: #333; /* Set the background color of submenu items */
+    border-bottom: 1px solid #666; /* Add a separator line between submenu items */
+}
+/* Show the submenu on hover of the parent item */
+li:hover .submenu {
+    display: block;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns, adjust as needed */
+    gap: 20px; /* Adjust the gap between images */
+}
+
+.image-grid a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.image-grid img {
+    max-width: 100%;
+}
+/* CSS for the image containers */
+.image-container {
+
+    text-align: center;
+    background-color: #f9f9f9; /* Background color for each container */
+    padding: 20px; /* Spacing around each container */
+    border: 1px solid #ddd; /* Border around each container */
+    border-radius: 5px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
+/* CSS for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 50;
+}
+
+.contact-details {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-details h2 {
+    font-size: 24px;
+    color: #000000;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #000000;
+}
+
+
+
+
+.alternate-footer {
+    background-color: #f5f5f5; 
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.contact-details {
+    flex: 1; 
+    padding: 0px; 
+}
+
+.map {
+    flex: 1; 
+}
+
+
+.map iframe {
+    width: 100%;
+    height: 300px; /* Set an appropriate height for the map */
+    border: none; /* Remove iframe border */
+}
+/* search bar*/ 
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/**/
+/*IMAGESSSSSSS*/
+.slideshow-container {
+    /* Adjust the maximum width of the slideshow */
+    position: relative;
+    margin: auto;
+    
+    max-width: 600px;
+            
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+}
+
+/* CSS for individual slides 
+.mySlides {
+    display: none;
+}*/
+
+/* CSS for the images within slides */
+.mySlides img {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* CSS for slide navigation dots (optional) */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.active {
+    background-color: #333;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/*SUB MENUUUU*/
